@@ -7,16 +7,41 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <header>
+    <header class="filtros">
       <!-- Para filtros y navegacion -->
+       <input type="search"  id="Buscar" placeholder="Filtrar Por Provincia, Categoría o Comida">
+       <select id="filtrocategoria">
+
+
+
+       </select>
+       <select id="filtroprovincia">
+       </select>
+    
     </header>
 
     <main class="comida-container" id="comidaContainer">
-        <!-- Contenido Dinamico -->
+
     </main>     
 
     <section class="addFood">
       <!-- Para el form para agregar comida -->
+       <form id="agregarcomida">
+        <label for="nombre">Nombre de la comida</label>
+        <input type="text" id="nombre" placeholder="Nombre de la Comida">
+        
+        <label for="categoria">Categoría</label>
+        <input type="text" id="categoria" placeholder="Categoría">
+
+        <label for="provincia">Provincia</label>
+        <input type="text" id="provincia" placeholder="Provincia">
+        <label for="ingredientes">Ingredientes</label>
+        <div class="contenedorIngredientes">
+        <input type="text" id="ingredientes"class="ingrediente" placeholder="Ingredientes">
+        </div>
+        <button type="button" id="agregarIngredientes">Agregar Ingredientes</button>
+        <button type="submit">Agregar la comida</button>
+       </form>
     </section>
 
     <script type="module" src="./main.js"></script>
